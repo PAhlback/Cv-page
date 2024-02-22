@@ -1,0 +1,93 @@
+.modal-toggle {
+    display: none;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    left: 10%;
+    right: 10%;
+    top: 10rem;
+    bottom: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-shadow: 2px 2px 3px;
+}
+
+.modal-toggle:checked ~ .popup {
+    background-color: rgb(109, 202, 202);
+    padding: 2rem 1rem;
+    bottom: auto;
+}
+
+.exit {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.modalbox {
+    position: relative;
+    font-family: inter, sans-serif;
+}
+
+.project-header h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.modalbox p {
+    padding: 1rem 2rem;
+}
+
+.modalbox a {
+    color: black;
+    text-decoration: none;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px;
+    margin: 0 40% 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-color: rgb(165, 255, 255);
+}
+
+.modalbox a:hover {
+    background-color: rgb(199, 253, 253);
+    font-weight: 600;
+}
+
+.modalbox a:active {
+    background-color: rgb(230, 255, 255);
+}
+
+.modal-toggle-label:hover {
+    color: rgb(66, 66, 66);
+}
+
+.modal-toggle-label:active {
+    color: rgb(131, 131, 131);
+}
+
+.exit:hover {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 600px) {
+    .popup {
+        right: 20%;
+        left: 20%;
+    }
+}
+
+@media (min-width: 900px) {
+    .popup {
+        right: 30%;
+        left: 30%;
+    }
+}

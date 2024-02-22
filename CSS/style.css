@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: 91vh;
+    background-image: url(./Images/output-onlinepngtools\(1\).png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/******************* HEADER *******************/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 9vh;
+}
+
+header nav {
+    margin-right: 4%;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    padding: 0rem 1rem;
+    font-family: inter, sans-serif;
+}
+
+header nav ul li a {
+    color: rgba(0, 0, 0, 0.511);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#logo {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.511);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#easteregg1 {
+    color: white;
+}
+
+#easteregg1:hover {
+    cursor: default;
+}
+
+#activelink {
+    color: rgb(92, 92, 92);
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 650px) {
+    #easteregg1 {
+        display: none;
+    }
+}
+
+/************** HAMBURGER MENU ****************/
+#nav-toggle {
+    display: none;
+}
+
+.ham-menu {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .ham-menu {
+        display: block;
+        position: absolute;
+        right: 5%;
+        font-size: 2rem;
+        z-index: 1;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        transition: all .5s;
+    }
+
+    #nav-toggle:checked ~ .menu {
+        background-color: rgba(0, 0, 0, 0.603);
+        padding-top: 6rem;
+        bottom: 0;
+    }
+
+    header {
+        justify-content: start;
+    }
+
+    #logo {
+        margin-left: 2rem;
+    }
+
+    .menu li {
+        padding: 1rem;    
+    }
+
+    .menu li a {
+        color: white;
+    }
+
+    #activelink {
+        color: black;
+        font-weight: 800;
+        padding: 0.5rem;
+        border: 1px solid #333;
+        border-radius: 15px;
+        background-color: white;
+    }
+}

@@ -1,0 +1,45 @@
+/******************* INDEX MAIN *******************/
+.homemain {
+    height: 91vh;
+    background-image: url(./Images/PontusAhlbäckHandelsLunchkonsert2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.pagetitle {
+    margin-left: 10vw;
+}
+
+.descriptors {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px black;
+}
+
+@media (max-width: 650px) {
+    .homemain {
+        display: flex;
+        justify-content: center;
+        background-position: 65%;
+    }
+
+    .pagetitle {
+        text-align: center;
+        margin: 0 1rem;
+    }
+
+    .descriptors {
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,48 @@
+/************************ ABOUT MAIN ******************/
+.aboutmain {
+    display: flex;
+    justify-content: center;
+/*     min-height: 91vh;
+    background-image: url(/Assignments/CV-sida/Images/output-onlinepngtools\(1\).png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.about {
+    display: flex;
+    min-height: 91vh;
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 2rem;
+    font-family: inter, sans-serif;
+    margin: 2rem 0rem;
+}
+
+.about p {
+    padding: 1rem;
+    line-height: 1.3;
+}
+
+.about p img {
+    width: 50%;
+    float: right;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 900px) {
+    .about p img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+    .about {
+        width: 70vw;
+    }
+
+    .about p img {
+        width: 100%;
+    }
+}
