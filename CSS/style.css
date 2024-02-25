@@ -133,3 +133,11 @@ header nav ul li a {
         background-color: white;
     }
 }
+
+
+/**************** PRINT *******************/
+@media print {
+    header {
+        display: none;
+    }
+}
