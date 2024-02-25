@@ -191,3 +191,10 @@
 #easteregg2::selection {
 	background-color: #00000000;
 }
+
+/**************** PRINT *******************/
+@media print {
+	.cv-page-navigation {
+		display: none;
+	}
+}

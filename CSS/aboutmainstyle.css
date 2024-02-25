@@ -31,6 +31,14 @@
     margin-bottom: 0.5rem;
 }
 
+.print-h2 {
+    display: none;
+}
+
+.print-br {
+    display: none;
+}
+
 @media (min-width: 900px) {
     .about p img {
         width: 40%;
@@ -44,5 +52,19 @@
 
     .about p img {
         width: 100%;
+    }
+}
+
+
+/**************** PRINT *******************/
+@media print {
+    .about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .print-h2 {
+        display: block;
     }
 }
