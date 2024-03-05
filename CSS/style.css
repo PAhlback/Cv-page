@@ -48,25 +48,14 @@ header nav ul li a {
     text-decoration: none;
 }
 
-#easteregg1 {
-    color: white;
-}
-
-#easteregg1:hover {
-    cursor: default;
-}
-
 #activelink {
     color: rgb(92, 92, 92);
     font-weight: 600;
 }
 
-
-
-@media (max-width: 650px) {
-    #easteregg1 {
-        display: none;
-    }
+#easteregg1 {
+    height: 20px;
+    width: 40px;
 }
 
 /************** HAMBURGER MENU ****************/
